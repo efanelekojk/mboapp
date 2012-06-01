@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="dialogUI.css" type="text/css" />
+<script type="text/javascript" src="jquery-1.7.min.js"></script>
+<script language="javascript" src="jquery.dragdrop.js"></script>
+<script language="javascript" src="jquery.dialogUI.js"></script>
+<script language="javascript">
+(function($){
+	$(document).ready(function(){
+		$("#blockalert1").click(function(){
+			$.alert('这里是模拟window的alert效果\r\n支持换行符','提示',function(){//取消
+				alert("2");
+			});
+		});
+		$("#blockalert2").click(function(){
+			$.confirm('sssssssssss',function(){//确定
+				alert("1");
+			},function(){//取消
+				alert("2");
+			});
+		});
+	});
+})(jQuery);
+</script>
+<input type="button" value="按钮1" id="blockalert1" />
+<input type="button" value="按钮2" id="blockalert2" />
