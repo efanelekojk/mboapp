@@ -236,7 +236,6 @@ webfile/js/common/line.css	746c4282
 webfile/js/common/line.js	707d4f0f
 webfile/js/common/lottery/default.css	d92be5fb
 webfile/js/common/lottery/demo.html	9acc87be
-webfile/js/common/lottery/highgame_lang_zh.js	7ed823bb
 webfile/js/common/lottery/image/addbutton.jpg	7c93b51e
 webfile/js/common/lottery/image/botton_buy.jpg	7531e2d7
 webfile/js/common/lottery/image/botton_delmul.jpg	177b0703
@@ -253,12 +252,6 @@ webfile/js/common/lottery/image/icon_03.jpg	a79aa616
 webfile/js/common/lottery/image/labelbg01.jpg	65831886
 webfile/js/common/lottery/image/labelbg02.jpg	4312ece4
 webfile/js/common/lottery/image/temp_01.jpg	acc52e8e
-webfile/js/common/lottery/jquery.highgame.0.js	583be536
-webfile/js/common/lottery/jquery.highgame.2.js	0fd646b2
-webfile/js/common/lottery/jquery.highgame.3.js	8428d579
-webfile/js/common/lottery/jquery.highgame.source.0.js	fbc51c7b
-webfile/js/common/lottery/jquery.highgame.source.2.js	d9fe1106
-webfile/js/common/lottery/jquery.highgame.source.3.js	fbf866ec
 webfile/js/common/top_button/interface.js	d75ffc7a
 webfile/js/common/top_button/top.js	027a9c65
 webfile/js/jquery.js	7e111ec5
