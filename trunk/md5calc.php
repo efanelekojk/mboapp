@@ -1,27 +1,24 @@
 <?php
 $time1=microtime(true);
-$folder='webfile';
+$folderRoot='webfile';
 $GLOBALS['filehexlist']='';
-filelist($folder);
+filelist($folderRoot);
 file_put_contents('filehex.txt',$GLOBALS['filehexlist']);
 echo "time: ".intval((microtime(true)-$time1)*1000)." ms\r\n";
 ?>
 <?php
-function filelist($folder){
-	$handle=opendir($folder);
+function filelist($folderRoot,$folder=''){
+	$handle=opendir($folderRoot.'/'.$folder);
 	while($file=readdir($handle)){
-		//if($folder=='.'){
-		//	$path=$file;
-		//}else{
-			$path=$folder.'/'.$file;
-		//}
-		if(is_dir($path)){
+		if(is_dir($folderRoot.'/'.$folder.'/'.$file)){
 			if($file=='.'||$file=='..'){
 			}else{
-				filelist($path);
+				$p=$file;
+				if($folder>'')$p=$folder.'/'.$p;
+				filelist($folderRoot,$p);
 			}
 		}else{
-			$filehex=$path."\t".crc32_file3($path);
+			$filehex=$folder.'/'.$file."\t".crc32_file3($folderRoot.'/'.$folder.'/'.$file);
 			$GLOBALS['filehexlist'].=$filehex."\r\n";
 		}
 	}
