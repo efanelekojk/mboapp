@@ -3,7 +3,7 @@ $time1=microtime(true);
 $folderRoot='webfile';
 $GLOBALS['filehexlist']='';
 filelist($folderRoot);
-file_put_contents('filehex.txt',$GLOBALS['filehexlist']);
+file_put_contents('filecrc32.txt',$GLOBALS['filehexlist']);
 echo "time: ".intval((microtime(true)-$time1)*1000)." ms\r\n";
 ?>
 <?php
